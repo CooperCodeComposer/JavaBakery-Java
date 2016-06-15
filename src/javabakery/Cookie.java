@@ -3,7 +3,7 @@ package javabakery;
 /**
  * Cookie represents a cookie and are only sold by the dozen
  */
-public class Cookie extends BakedGood implements Comparable<BakedGood>{
+public class Cookie extends BakedGood implements Comparable<Cookie>{
     
     // constant class variable
     private static final int DOZEN_COUNT = 12;
@@ -78,8 +78,8 @@ public class Cookie extends BakedGood implements Comparable<BakedGood>{
     
     // Compare To method
     @Override
-    public int compareTo(BakedGood bg) {
-        return this.name.compareTo(bg.name);
+    public int compareTo(Cookie c) {
+        return this.name.compareTo(c.name);
     }
     
 }

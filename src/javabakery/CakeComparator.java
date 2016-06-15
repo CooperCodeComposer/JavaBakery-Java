@@ -2,6 +2,9 @@ package javabakery;
 
 import java.util.Comparator;
 
+/**
+ * CakeComparator implements Comparator interface for Cake class
+ */
 public class CakeComparator implements Comparator<Cake>{
     
     @Override

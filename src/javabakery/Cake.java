@@ -3,7 +3,7 @@ package javabakery;
 /**
  * Cake represents a cake and extends BakedGood
  */
-public class Cake extends BakedGood implements Comparable<BakedGood> {
+public class Cake extends BakedGood implements Comparable<Cake> {
     
     // Instance variables
     protected CAKE_TYPE type;
@@ -49,8 +49,8 @@ public class Cake extends BakedGood implements Comparable<BakedGood> {
     
     // Compare To method
     @Override
-    public int compareTo(BakedGood bg) {
-        return this.name.compareTo(bg.name);
+    public int compareTo(Cake c) {
+        return this.name.compareTo(c.name);
     }
     
     // Getters and setters
